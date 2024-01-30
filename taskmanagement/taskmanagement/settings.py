@@ -80,10 +80,19 @@ WSGI_APPLICATION = 'taskmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'taskmanagement',
+        'USER': 'root',
+        'PASSWORD': 'Him20@12',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
+#  'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 
 
 # Password validation
