@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'channels',
 ]
+
+# Use channels layer as the default backend for Django ASGI applications
+ASGI_APPLICATION = 'taskmanagement.asgi.application'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
